@@ -1,0 +1,68 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.banner {
+  background: url("../images/banner-back.jpg");
+  height: 350px;
+  background-size: 100%;
+}
+.banner div {
+  color: #fff;
+  text-align: center;
+  /* line-height: 350px; */
+  margin: 0px;
+  display: inline-block;
+  /* line-height: 350px; */
+}
+.banner .slide-left {
+  animation: slide-left 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+.banner .slide-right {
+  animation: slide-right 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-150%);
+  }
+}
+@keyframes slide-right {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(80%);
+  }
+}
+.banner .text {
+  text-align: center;
+  display: block;
+}
+.banner .vl {
+  height: 280px;
+  display: inline-block;
+  border-left: 10px solid white;
+  margin: 0px 5px;
+  transform: rotate(30deg);
+  position: absolute;
+  top: 5%;
+}
+.banner .banner-text {
+  position: absolute;
+  top: 10%;
+}
+.banner .profile-image {
+  width: 180px;
+  height: 180px;
+  display: inline-block;
+  border: 7px solid #fff;
+  border-radius: 5px;
+}
+.slide-right.banner-text h2 {
+  text-align: left;
+  font-size: 42px;
+}
