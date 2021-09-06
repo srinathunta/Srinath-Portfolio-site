@@ -5,16 +5,36 @@ body {
   padding: 0px;
   font-family: "Epilogue", sans-serif;
 }
+span.highlight {
+  font-size: 24px;
+}
 section.content {
   text-align: center;
-  width: 70%;
+  width: 80%;
   margin: 30px auto;
+}
+ul.sticky {
+  position: sticky;
+  top: 0;
+  list-style: none;
+  padding: 10px;
+  margin: 0px;
+  background: #1e1e1e;
+  text-align: right;
+  z-index: 999;
+}
+ul.sticky li {
+  display: inline-block;
+  margin: 0px 15px;
+  cursor: pointer;
+  color: #9cdcfe;
 }
 /* banner */
 .banner {
-  background: url("../images/banner-back.jpg");
+  background: #2d2d2d;
   height: 350px;
   background-size: 100%;
+  position: relative;
 }
 .banner div {
   color: #fff;
@@ -42,7 +62,7 @@ section.content {
     opacity: 1;
   }
   100% {
-    transform: translateX(-150%);
+    transform: translateX(-100%);
   }
 }
 @keyframes slide-right {
@@ -57,17 +77,18 @@ section.content {
     opacity: 1;
   }
   100% {
-    transform: translateX(80%);
+    transform: translateX(25%);
   }
 }
 .banner .text {
-  text-align: center;
-  display: block;
+  left: 20%;
+  position: absolute;
+  top: 10%;
 }
 .banner .vl {
   height: 280px;
   display: inline-block;
-  border-left: 10px solid white;
+  border-left: 10px solid #b7dcaa;
   margin: 0px 5px;
   transform: rotate(30deg);
   position: absolute;
@@ -84,12 +105,21 @@ section.content {
   border: 7px solid #fff;
   border-radius: 5px;
 }
-.banner .slide-right.banner-text h2 {
+.banner .banner-text h2 {
   text-align: left;
-  font-size: 42px;
+  font-size: 65px;
+  color: #b7dcaa;
 }
 /* banner end */
 /* about-me */
+.about-left {
+  text-align: left;
+  width: 60%;
+}
+.about-right {
+  width: 40%;
+  float: left;
+}
 .about-me p.about-text {
   line-height: 30px;
 }
@@ -100,6 +130,8 @@ a.about-resume {
   background: black;
   padding: 15px 20px;
   border-radius: 15px;
+  display: block;
+  width: fit-content;
 }
 a.about-resume img.right-arrow {
   width: 15px;
@@ -110,26 +142,26 @@ a.about-resume:hover img.right-arrow {
 }
 /* about-me end */
 /* Key skills */
-.all-skills .skill {
+.key-skills.visible .all-skills .skill {
   display: inline-block;
   margin: 0px 20px;
-  animation: slidein 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+  animation: slidein 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
   /* animation-duration: 1s;
   animation-name: slidein; */
 }
-.all-skills .skill:nth-child(2) {
+.key-skills.visible .all-skills .skill:nth-child(2) {
   animation-delay: 0.2s;
 }
-.all-skills .skill:nth-child(3) {
+.key-skills.visible .all-skills .skill:nth-child(3) {
   animation-delay: 0.3s;
 }
-.all-skills .skill:nth-child(4) {
+.key-skills.visible .all-skills .skill:nth-child(4) {
   animation-delay: 0.4s;
 }
-.all-skills .skill:nth-child(5) {
+.key-skills.visible .all-skills .skill:nth-child(5) {
   animation-delay: 0.5s;
 }
-.all-skills .skill:nth-child(6) {
+.key-skills.visible .all-skills .skill:nth-child(6) {
   animation-delay: 0.6s;
 }
 @keyframes slidein {

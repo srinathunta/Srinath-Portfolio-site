@@ -4,7 +4,7 @@ import whatsapp from '../images/WhatsApp.png'
 
 export default function Contact(){
     return(
-        <section className="contact content">
+        <section className="contact content" id="contact">
             <h2>Contact Me</h2>
             <div className="contact-me">
                 <div className="contact-links"><a href="mailto:srinath.unta@gmail.com?subject=Hello"><img src={Gmail} alt="" /><p>srinath.unta@gmail.com</p></a></div>

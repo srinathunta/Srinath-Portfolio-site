@@ -14,13 +14,13 @@ export default function GitProjects(){
       }, []);
     
     return(
-        <section className="gitprojects content">
+        <section className="gitprojects content" id="projects">
             <h2>My Projects</h2>
             <ul className="card-wrapper">
                 {projects && projects.map(project => {
                     return (
                         <li className="card">
-                            <a href={project.html_url} target="_blank">
+                            <a href={project.html_url} target="_blank" rel="noreferrer">
                                 <h2>{project.name}</h2>
                             </a>
                             <p className="project-description">{project.description}</p>

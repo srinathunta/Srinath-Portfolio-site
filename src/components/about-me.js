@@ -4,16 +4,18 @@ import Arrow from "../images/right-arrow.png"
 
 export default function About(){
     return(
-        <section className="about-me content">
+        <section className="about-me content" id="about">
             <h2 className='about-head'>About Me</h2>
-            <p className='about-text'>Wordpress developer with strong history in website management and development. Expert in
-all aspects of WordPress website creation, plug-ins and implementation. Skilled in creating
-engaging and interactive websites. Knowledge and experience in PHP and Python language.
-Experience in HTML, CSS and javascript. Ability to troubleshoot and work with clients to
-solve problems or find solutions to requests.
+            <div className="about-left">
+            <p className='about-text'>Hi all, <br />My name <span className="highlight"> Srinath Unta </span>I am a software enginner from Mumbai. I am currently working in Infozzle as a Full-stack developer. I am skilled in creating
+engaging and interactive websites. I have Knowledge and experience in PHP and Python language also experience in HTML, CSS and javascript. 
 </p>
-            <div className="resume-text"><p>You can download resume here.</p>
+            <div className="resume-text">
             <a className='about-resume' href={Resume} download>Resume <img className="right-arrow" src={Arrow} alt="reight-arrow" /></a></div>
+            </div>
+            <div className="about-right">
+                
+            </div>
         </section>
     );
 }
