@@ -14,7 +14,8 @@ export default function GitProjects(){
       }, []);
     
     return(
-        <section className="gitprojects content" id="projects">
+        <section className="gitprojects main" id="projects">
+            <div className="content">
             <h2>My Projects</h2>
             <ul className="card-wrapper">
                 {projects && projects.map(project => {
@@ -30,6 +31,7 @@ export default function GitProjects(){
                     )
                 })}
             </ul>
+            </div>
         </section>
     )
 }

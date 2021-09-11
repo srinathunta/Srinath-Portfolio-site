@@ -1,41 +1,22 @@
 import React from "react";
 import ReactTypingEffect from 'react-typing-effect';
-
+import 'boxicons';
 export default function Banner(){
-  const htmltext = '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, nitial-scale=1.0"><title>Document</title></head><body>'
+  const htmltext = ''
   const htmlendtext = "</body></html>"
     return(
-        <section className='banner' id="home">
-            <div className="text banner-left">
-                <div className='slide-left banner-text'>
-                    <h2>Srinath<br />Unta</h2>
-                </div>
-                <div className="vl"></div>
-                <div className='slide-right banner-text'><h2>Full-stack<br />Developer</h2></div>
+        <section id="hero" class="d-flex flex-column justify-content-center">
+            <div class="content" data-aos="zoom-in" data-aos-delay="100">
+                <h1>Srinath Unta</h1>
+                <p><ReactTypingEffect  text={["Full-stack Developer."]} /></p>
+                
+                <div class="social-links">
+                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
-            <div className="code banner-right">
-            {htmltext}
-            <ReactTypingEffect
-        text={["<h1>Hello Wolrd!!!</h1>","<h1>Hello World!!!</h1>"]}
-        cursorRenderer={cursor => <h1>{cursor}</h1>}
-        
-        displayTextRenderer={(text, i) => {
-          return (
-            <p>
-              {text.split('').map((char, i) => {
-                const key = `${i}`;
-                return (
-                  <span
-                    key={key}
-                  >{char}</span>
-                );
-              })}
-            </p>
-          );
-        }}        
-      />
-      {htmlendtext}
-            </div>
-        </section>
+        </div>
+  </section>
     )
 }

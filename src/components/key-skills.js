@@ -18,7 +18,8 @@ export default function KeySkills(){
     },[inView])
 
     return(
-        <section ref={ref} className={`key-skills content ${isvisible}`} id="skills">
+        <section ref={ref} className={`key-skills main bg-mint ${isvisible}`} id="skills">
+            <div className="content">
             <h2 className="skills-head">Key Skills</h2>
             <div className="all-skills">
                 <div className="skill"><img src={Python} alt="python"/>Python</div>
@@ -27,6 +28,7 @@ export default function KeySkills(){
                 <div className="skill"><img src={Javascript} alt="Javascript"/>Javascript</div>
                 <div className="skill"><img src={Api} alt="API"/>API</div>
                 <div className="skill"><img src={Wordpress} alt="Wordpress"/>Wordpress</div>
+            </div>
             </div>
         </section>
     )
