@@ -20,7 +20,7 @@ export default function KeySkills(){
     return(
         <section ref={ref} className={`key-skills main bg-mint ${isvisible}`} id="skills">
             <div className="content">
-            <h2 className="skills-head">Key Skills</h2>
+            <h2 className="skills-head main-title">Key Skills</h2>
             <div className="all-skills">
                 <div className="skill"><img src={Python} alt="python"/>Python</div>
                 <div className="skill"><img src={Html} alt="HTML"/>HTML</div>

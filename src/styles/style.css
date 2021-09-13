@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400&display=swap");
+* {
+  box-sizing: border-box;
+}
 html,
 body {
   margin: 0px;
@@ -269,15 +272,15 @@ li.card {
 /* github projects end */
 /* contact me */
 .contact-links {
-  /* display: flex;
-  justify-content: space-around; */
+  display: flex;
+  justify-content: space-around;
 }
-.contact-links {
-  padding: 15px 20px;
+.contact-link {
+  padding: 5px 20px;
   border: 1px solid;
   border-radius: 20px;
 }
-.contact-links a {
+.contact-link a {
   display: inline-block;
 }
 .contact-me img {
@@ -292,10 +295,86 @@ li.card {
 }
 .contact-me.contact-me-left {
   width: 50%;
-  float: left;
   margin: 0 auto;
+}
+.contact-content .contact-me {
+  padding: 20px 30px;
 }
 .contact-me.contact-me-right {
   width: 50%;
   margin: 0 auto;
+}
+.contact-content {
+  display: flex;
+  justify-content: space-around;
+}
+.contact-row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
+}
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+.contact-row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) / 2);
+  padding-left: calc(var(--bs-gutter-x) / 2);
+  margin-top: var(--bs-gutter-y);
+}
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 14px;
+}
+textarea.form-control {
+  min-height: calc(1.5em + 0.75rem + 2px);
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.contact .php-email-form button[type="submit"] {
+  background: #0563bb;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.my-3 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+@media (min-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
 }

@@ -6,7 +6,7 @@ export default function About(){
     return(
         <section className="about-me main" id="about">
             <div className="content">
-            <h2 className='about-head'>About Me</h2>
+            <h2 className='about-head main-title'>About Me</h2>
             <div className="about-left">
             <p className='about-text'>Hi all, <br />My name <span className="highlight"> Srinath Unta </span>I am a software enginner from Mumbai. I am currently working in Infozzle as a Full-stack developer. I am skilled in creating
 engaging and interactive websites. I have Knowledge and experience in PHP and Python language also experience in HTML, CSS and javascript. 

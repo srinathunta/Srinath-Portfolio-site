@@ -16,7 +16,7 @@ export default function GitProjects(){
     return(
         <section className="gitprojects main" id="projects">
             <div className="content">
-            <h2>My Projects</h2>
+            <h2 className="main-title">My Projects</h2>
             <ul className="card-wrapper">
                 {projects && projects.map(project => {
                     return (
