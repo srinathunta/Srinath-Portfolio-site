@@ -1,6 +1,8 @@
 import * as React from "react"
 import '../styles/style.css'
 import '../styles/boxicons.min.css'
+import "../styles/slick.css"; 
+// import "../styles/slick-theme.css";
 import Banner from '../components/main-banner.js';
 import About from '../components/about-me.js';
 import KeySkills from '../components/key-skills.js'

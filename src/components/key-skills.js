@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
-import Python from '../images/skills/python.png'
+import Python from '../images/skills/python-1.png'
 import Html from '../images/skills/html.png'
 import Css from '../images/skills/css.png'
 import Javascript from '../images/skills/JavaScript.png'
 import Api from '../images/skills/api.png'
 import Wordpress from '../images/skills/wordpress.png'
+import Php from '../images/skills/php.png'
+import ReactImg from '../images/skills/react.png'
+import NodeImg from '../images/skills/node.png'
 import { useInView } from 'react-intersection-observer';
 export default function KeySkills(){
 
@@ -22,12 +25,19 @@ export default function KeySkills(){
             <div className="content">
             <h2 className="skills-head main-title">Key Skills</h2>
             <div className="all-skills">
-                <div className="skill"><img src={Python} alt="python"/>Python</div>
-                <div className="skill"><img src={Html} alt="HTML"/>HTML</div>
-                <div className="skill"><img src={Css} alt="CSS"/>CSS</div>
-                <div className="skill"><img src={Javascript} alt="Javascript"/>Javascript</div>
-                <div className="skill"><img src={Api} alt="API"/>API</div>
-                <div className="skill"><img src={Wordpress} alt="Wordpress"/>Wordpress</div>
+                <div className="skills-row">
+                    <div className="skill"><div className="skill-image"><img src={Python} alt="python"/></div>Python</div>
+                    <div className="skill"><div className="skill-image"><img src={Html} alt="HTML"/></div>HTML</div>
+                    <div className="skill"><div className="skill-image"><img src={Css} alt="CSS"/></div>CSS</div>
+                    <div className="skill"><div className="skill-image"><img src={Javascript} alt="Javascript"/></div>Javascript</div>
+                    <div className="skill"><div className="skill-image"><img src={Api} alt="API"/></div>API</div>
+                    <div className="skill"><div className="skill-image"><img src={Wordpress} alt="Wordpress"/></div>Wordpress</div>
+                </div>
+                <div className="skills-row">
+                    <div className="skill"><div className="skill-image"><img src={Php} alt="python"/></div>PHP</div>
+                    <div className="skill"><div className="skill-image"><img src={ReactImg} alt="HTML"/></div>React</div>
+                    <div className="skill"><div className="skill-image"><img src={NodeImg} alt="CSS"/></div>NodeJs</div>
+                </div>
             </div>
             </div>
         </section>
