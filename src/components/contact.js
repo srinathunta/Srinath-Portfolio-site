@@ -17,12 +17,12 @@ export default function Contact(){
               </div>
 
               <div className="email">
-                <h4><i class='bx bx-envelope'></i>Email:</h4>
+                <h4><i className='bx bx-envelope'></i>Email:</h4>
                 <p>srinath.unta@gmail.com</p>
               </div>
 
               <div className="phone">
-                <h4><i class='bx bx-phone'></i>Call:</h4>
+                <h4><i className='bx bx-phone'></i>Call:</h4>
                 <p>+91 9869984496</p>
               </div>
 
