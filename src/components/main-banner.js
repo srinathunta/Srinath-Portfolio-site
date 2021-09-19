@@ -1,11 +1,14 @@
 import React from "react";
 import ReactTypingEffect from 'react-typing-effect';
 import 'boxicons';
+import BackImg from '../images/profile/new.jpg'
+
 export default function Banner(){
   const htmltext = ''
   const htmlendtext = "</body></html>"
     return(
-        <section id="hero" className="d-flex flex-column justify-content-center">
+        <section id="hero" className="d-flex flex-column justify-content-center" 
+        style={{backgroundImage: `url(${BackImg})`}}>
             <div className="content" data-aos="zoom-in" data-aos-delay="100">
                 <h1>Srinath Unta</h1>
                 <p><ReactTypingEffect  text={["Full-stack Developer."]} /></p>
