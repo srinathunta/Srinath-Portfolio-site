@@ -91,7 +91,7 @@ ul.sticky li {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../images/profile/new.jpg") top right no-repeat;
+  /* background: url("../images/profile/new.jpg") top right no-repeat; */
   background-size: cover;
   position: relative;
 }
