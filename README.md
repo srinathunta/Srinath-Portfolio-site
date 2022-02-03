@@ -1,7 +1,7 @@
 
 <div>
   <b>Visit site</b></br>
-  <a href="https://cocky-lewin-77c6b6.netlify.app/">https://cocky-lewin-77c6b6.netlify.app/</a>
+  <a target="_blank" href="https://cocky-lewin-77c6b6.netlify.app/">https://cocky-lewin-77c6b6.netlify.app/</a>
   </div>
 
 <p align="center">
